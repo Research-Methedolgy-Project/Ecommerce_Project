@@ -1,0 +1,28 @@
+{
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "category",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "remaining_stock",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "added_date",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "relationships": [],
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "Product",
+  "changelogDate": "20210817173046"
+}

@@ -48,6 +48,10 @@ public class CacheConfiguration {
             createCache(cm, com.mycompany.myapp.domain.User.class.getName());
             createCache(cm, com.mycompany.myapp.domain.Authority.class.getName());
             createCache(cm, com.mycompany.myapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.mycompany.myapp.domain.Product.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Cart.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Order.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Order.class.getName() + ".products");
             // jhipster-needle-ehcache-add-entry
         };
     }
