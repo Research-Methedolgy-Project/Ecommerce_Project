@@ -100,7 +100,7 @@ public class OrderService {
     @Transactional(readOnly = true)
     public Optional<OrderDTO> findOne(Long id) {
         log.debug("Request to get Order : {}", id);
-        return orderRepository.findOneWithEagerRelationships(id).map(orderMapper::toDto);
+        return orderRepository.findById(id).map(orderMapper::toDto);
     }
 
     /**

@@ -18,14 +18,13 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
     List<Order> findByUserIsCurrentUser();
 
     @Query(
-        value = "select distinct order from Order order left join fetch order.products",
+        value = "select distinct order from Order order",
         countQuery = "select count(distinct order) from Order order"
     )
     Page<Order> findAllWithEagerRelationships(Pageable pageable);
 
-    @Query("select distinct order from Order order left join fetch order.products")
+    @Query("select distinct order from Order order")
     List<Order> findAllWithEagerRelationships();
 
-    @Query("select order from Order order left join fetch order.products where order.id =:id")
-    Optional<Order> findOneWithEagerRelationships(@Param("id") Long id);
+    Optional<Order> findOrderById(@Param("id") Long id);
 }

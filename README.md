@@ -1,7 +1,5 @@
 # Ecommerce_Project
 
-This application was generated using JHipster 7.0.1, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.0.1](https://www.jhipster.tech/documentation-archive/v7.0.1).
-
 ## Development
 
 To start your application in the dev profile, run:
@@ -9,8 +7,6 @@ To start your application in the dev profile, run:
 ```
 ./gradlew
 ```
-
-For further instructions on how to develop with JHipster, have a look at [Using JHipster in development][].
 
 ## Building for production
 
@@ -28,8 +24,6 @@ To ensure everything worked, run:
 java -jar build/libs/*.jar
 ```
 
-Refer to [Using JHipster in production][] for more details.
-
 ### Packaging as war
 
 To package your application as a war in order to deploy it to an application server, run:
@@ -45,8 +39,6 @@ To launch your application's tests, run:
 ```
 ./gradlew test integrationTest jacocoTestReport
 ```
-
-For more information, refer to the [Running tests page][].
 
 ### Code quality
 
